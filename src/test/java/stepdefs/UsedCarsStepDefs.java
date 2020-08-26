@@ -54,4 +54,24 @@ public class UsedCarsStepDefs {
         String bodyAsAString = responseBody.asString();
         assert(bodyAsAString.contains(make));
     }
+
+    @Given("I search for used cars")
+    public void search_used_cars(){
+        //To-Do Code to get the active listing IDs of used cars
+        //https://developer.trademe.co.nz/api-reference/search-methods/used-motors-search/
+        //Use https://api.trademe.co.nz/v1/Search/Motors/Used.{file_format}
+
+    }
+
+    @Given("I request for a particular listing")
+    public void send_request_for_a_Listing(){
+        //To-Do Code to get the a listing using the extracted Listing id from above
+        //https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing/
+        //Use https://api.trademe.co.nz/v1/Listings/{listingId}.{file_format}
+    }
+
+    @Given("I should get all the used car details in response")
+    public void Check_response_for_details(){
+        //To-Do Code to check response for all the details
+    }
 }

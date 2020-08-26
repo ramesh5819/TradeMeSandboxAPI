@@ -12,4 +12,9 @@ Feature: User browses used cars
     Then the status code is 200
     Then "Kia" must exist
 
+  Scenario: User browses the details of a used car
+    Given I search for used cars
+    When I request for a particular listing
+    Then I should get all the used car details in response
+
 
